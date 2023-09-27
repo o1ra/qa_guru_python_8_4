@@ -39,9 +39,10 @@ def test_circle():
     # TODO сосчитайте площадь
     area = math.pi * r ** 2
     assert area == 1661.9025137490005
-
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
+    print(f"Длина = {length:.2f} Площадь = {area:.2f}")
+
     assert length == 144.51326206513048
 
 
@@ -81,6 +82,6 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-
+    print(d.values())
     assert isinstance(d, dict)
     assert len(d) == 5
